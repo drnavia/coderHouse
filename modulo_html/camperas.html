@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Fontwesome 5.10 -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/extra.css" />
+    <meta
+      name="description"
+      content="Sitio web Atop. Venta de ropa de hombre minorista y mayorista."
+    />
+    <meta
+      name="keywords"
+      content="ropa hombre, venta mayorista ropa, venta de ropa hombre"
+    />
+    <title>Atop</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <header>
+        <div id="vacio"></div>
+        <div class="logo">
+          <div class="img">
+            <img src="./src/img/logo2.png" alt="logo de Atop" />
+          </div>
+        </div>
+        <div class="btnMenu">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div id="buscador">
+          <input type="search" id="search" placeholder="Buscar..." />
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="publicidadHeader">
+          <p>
+            <span
+              ><i class="fa fa-truck fa-flip-horizontal" aria-hidden="true"></i
+            ></span>
+            Envio sin cargo a partir de <span class="negrita"> $3500</span>
+          </p>
+        </div>
+      </header>
+      <nav>
+        <ul class="aMenu">
+          <li class="init"></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#" class="activo">Articulos</a>
+            <ul>
+              <li><a href="camperas.html">Camperas</a></li>
+              <li><a href="buzos.html">Buzos</a></li>
+              <li><a href="articulos.html">Todos</a></li>
+            </ul>
+          </li>
+          <li><a href="articulos.html">Outlet</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li class="final"></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h1 class="hidden">Articulos</h1>
+        <!--Filtrado-->
+        <aside class="main--center">
+          <div class="main__filtros">
+            <div class="main__filtros--titulo">Filtrar por:</div>
+            <div class="main__filtros__grupo">
+              <div class="main__filtros__grupo--titulo">Color</div>
+              <div class="main__filtros__grupo--contenido">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_color_rojo"
+                    id="filtro_color_rojo"
+                  />
+                  <label class="form-check-label" for="filtro_color_rojo">
+                    Rojo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_color_azul"
+                    id="filtro_color_azul"
+                  />
+                  <label class="form-check-label" for="filtro_color_azul">
+                    Azul
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_color_verde"
+                    id="filtro_color_verde"
+                  />
+                  <label class="form-check-label" for="filtro_color_verde">
+                    Verde
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="main__filtros__grupo">
+              <div class="main__filtros__grupo--titulo">Talle</div>
+              <div class="main__filtros__grupo--contenido">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_talle_S"
+                    id="filtro_talle_S"
+                  />
+                  <label class="form-check-label" for="filtro_talle_S">
+                    S
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_talle_M"
+                    id="filtro_talle_M"
+                  />
+                  <label class="form-check-label" for="filtro_talle_M">
+                    M
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    name="filtro_talle_L"
+                    id="filtro_talle_L"
+                  />
+                  <label class="form-check-label" for="filtro_talle_L">
+                    L
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!--Articulos-->
+        <section class="main__articulos">
+          <!--articulo 1-->
+          <div class="main__articulos__item">
+            <div class="main__articulos__item--hover">
+              <i class="fas fa-expand"></i>
+            </div>
+            <div class="main__articulos__item__imagen">
+              <img
+                src="./src/img/articulos/campera-de-hombre-loar.jpg"
+                alt=""
+              />
+            </div>
+            <div class="main__articulos__item__titulo">
+              <span>Campera poliester</span>
+            </div>
+          </div>
+          <!--articulo 1-->
+          <div class="main__articulos__item">
+            <div class="main__articulos__item--hover">
+              <i class="fas fa-expand"></i>
+            </div>
+            <div class="main__articulos__item__imagen">
+              <img
+                src="./src/img/articulos/camperas.jpg"
+                alt=""
+              />
+            </div>
+            <div class="main__articulos__item__titulo">
+              <span>Campera poliester</span>
+            </div>
+          </div>
+          <!--articulo 1-->
+          <div class="main__articulos__item">
+            <div class="main__articulos__item--hover">
+              <i class="fas fa-expand"></i>
+            </div>
+            <div class="main__articulos__item__imagen">
+              <img
+                src="./src/img/articulos/dsc029711-1abf040e3db02ddd7816158302227296-1024-1024.jpg"
+                alt=""
+              />
+            </div>
+            <div class="main__articulos__item__titulo">
+              <span>Campera poliester</span>
+            </div>
+          </div>
+          <!--articulo 1-->
+          <div class="main__articulos__item">
+            <div class="main__articulos__item--hover">
+              <i class="fas fa-expand"></i>
+            </div>
+            <div class="main__articulos__item__imagen">
+              <img
+                src="./src/img/articulos/campera-de-hombre-loar.jpg"
+                alt=""
+              />
+            </div>
+            <div class="main__articulos__item__titulo">
+              <span>Campera poliester</span>
+            </div>
+          </div>
+          <!--articulo 1-->
+          <div class="main__articulos__item">
+            <div class="main__articulos__item--hover">
+              <i class="fas fa-expand"></i>
+            </div>
+            <div class="main__articulos__item__imagen">
+              <img
+                src="./src/img/articulos/camperas.jpg"
+                alt=""
+              />
+            </div>
+            <div class="main__articulos__item__titulo">
+              <span>Campera poliester</span>
+            </div>
+          </div>
+        </section>
+        <!--Fin articulos-->
+      </main>
+      <footer class="footerDistributed">
+        <div class="footerLeft">
+          <p class="footerLinks">
+            <a href="#">Inicio</a>
+            <a href="#">Outlet</a>
+            <a href="#">Articulos</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+          </p>
+          <p>Company Draff &copy; 2015</p>
+        </div>
+        <div class="footerRight">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+    <div class="bg">
+      <div class="fondo"></div>
+      <div class="portada"></div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    $(document).ready(main);
+    var contador = 1;
+    function main() {
+      $(".btnMenu").click(function () {
+        if (contador == 1) {
+          $("nav").addClass("active");
+          contador = 0;
+        } else {
+          contador = 1;
+          $("nav").removeClass("active");
+        }
+      });
+    }
+  </script>
+</html>
