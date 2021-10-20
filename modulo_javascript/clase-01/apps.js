@@ -45,3 +45,5 @@ alert("Tu nombre es:"+nombre_nuevo);
 let aceptar = confirm("esto es un mensaje de confirmacion");
 
 console.log(aceptar);
+
+let numero = Number("14"); //convierte el string a numero 
